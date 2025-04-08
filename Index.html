@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Bestie!</title>
+    <style>
+        body {
+            background-color: #ffccff;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #ff66b2;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .shayari {
+            background-color: #ffe6f2;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff3385;
+        }
+
+        .wish-message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #ff66b2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday, Bestie! 🎉</h1>
+        <p class="message">On your special day, I wish you all the happiness in the world! 💖</p>
+        
+        <div class="shayari">
+            <h2>💌 Romantic Shayari 💌</h2>
+            <p>तेरे बिना अधूरी है मेरी हर खुशी, <br>तेरे साथ ही तो है मेरी हर खुशी।</p>
+            <p>तू है मेरी ज़िंदगी की सबसे हसीन ख्वाब, <br>तेरे बिना हर लम्हा है बेकार।</p>
+            <p>तेरे चेहरे की मुस्कान से रोशन है मेरा जहां, <br>तेरे बिना हर खुशी है बेगाना।</p>
+        </div>
+
+        <button id="wishButton">Send Birthday Wish 🎈</button>
+        <div id="wishMessage" class="wish-message"></div>
+    </div>
+
+    <script>
+        document.getElementById('wishButton').addEventListener('click', function() {
+            const wishes = [
+                "May your day be filled with love and joy! 💖",
+                "Wishing you a year full of adventure and happiness! 🎉",
+                "You deserve all the wonderful things in life! 🌹",
+                "May your birthday be as fabulous as you are! 🎂",
+                "Here's to another year of amazing memories together! 🥳"
+            ];
+            
+            const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
+            document.getElementById('wishMessage').innerText = randomWish;
+        });
+    </script>
+</body>
+</html>
